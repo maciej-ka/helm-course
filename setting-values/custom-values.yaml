@@ -4,6 +4,8 @@
 
 wordpressUsername: lauro
 existingSecret: custom-wp-credentials
+service:
+  type: NodePort
 autoscaling:
   enabled: true
   minReplicas: 2
