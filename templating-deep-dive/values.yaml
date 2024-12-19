@@ -14,3 +14,13 @@ image:
 ## @param containerPorts.http
 containerPorts:
   http: 80
+
+## Settings for NGINX service
+##
+## @param service.enabled Whether to deploy the service altogether or not
+## @param service.type The type of service in front of the Nginx pods
+## @param service.port The port where the service is receiving requests
+service:
+  enabled: false
+  type: ClusterIP
+  port: 80
