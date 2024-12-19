@@ -13,6 +13,16 @@ image:
   name: nginx
   tag: '1.27.0'
 
+## Settings for NGINX container securityContext
+##
+## @param securityContext.enabled
+## @param securityContext.runAsUser
+## @param securityContext.fsGroup
+securityContext:
+  enabled: true
+  runAsUser: 1000
+  fsGroup: 2000
+
 ## NGINX container ports
 ##
 ## @param containerPorts.http
@@ -31,4 +41,3 @@ services:
   svc2:
     type: NodePort
     port: 30007
-  
