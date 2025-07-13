@@ -1,0 +1,28 @@
+Every 2.0s: kubectl get all                                                                                                                                Maciejs-MacBook-Pro.local: 17:01:34
+                                                                                                                                                                                 in 0.099s (0)
+NAME                               READY   STATUS                       RESTARTS        AGE                                                                                                   
+pod/my-wordpress-96bcc9899-s9bx2   0/1     CreateContainerConfigError   0               5m41s                                                                                                 
+pod/my-wordpress-mariadb-0         0/1     CrashLoopBackOff             5 (2m10s ago)   5m41s                                                                                                 
+                                                                                                                                                                                              
+NAME                           TYPE           CLUSTER-IP       EXTERNAL-IP   PORT(S)                      AGE                                                                                 
+service/kubernetes             ClusterIP      10.96.0.1        <none>        443/TCP                      5h31m                                                                               
+service/my-wordpress           LoadBalancer   10.100.80.62     <pending>     80:32417/TCP,443:30812/TCP   5m41s                                                                               
+service/my-wordpress-mariadb   ClusterIP      10.100.222.243   <none>        3306/TCP                     5m41s                                                                               
+                                                                                                                                                                                              
+NAME                           READY   UP-TO-DATE   AVAILABLE   AGE                                                                                                                           
+deployment.apps/my-wordpress   0/1     1            0           5m41s                                                                                                                         
+                                                                                                                                                                                              
+NAME                                     DESIRED   CURRENT   READY   AGE                                                                                                                      
+replicaset.apps/my-wordpress-96bcc9899   1         1         0       5m41s                                                                                                                    
+                                                                                                                                                                                              
+NAME                                    READY   AGE                                                                                                                                           
+statefulset.apps/my-wordpress-mariadb   0/1     5m41s                                                                                                                                         
+                                                                                                                                                                                              
+                                                                                                                                                                                              
+                                                                                                                                                                                              
+                                                                                                                                                                                              
+                                                                                                                                                                                              
+                                                                                                                                                                                              
+                                                                                                                                                                                              
+                                                                                                                                                                                              
+                                                                                                                                                                                              
